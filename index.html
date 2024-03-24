@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Matrizes de transformação</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <div class="main">
-            <div class="matrix-container">
-                <p class="matrix-title">Matriz de transformação</p>
-                <table>
-                    <tr>
-                        <td><input type="number" id="m11" value="1" /></td>
-                        <td><input type="number" id="m12" value="0" /></td>
-                        <td><input type="number" id="m13" value="0" /></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" id="m21" value="0" /></td>
-                        <td><input type="number" id="m22" value="1" /></td>
-                        <td><input type="number" id="m23" value="0" /></td>
-                    </tr>
-                    <tr>
-                        <td><input type="number" id="m31" value="0" disabled /></td>
-                        <td><input type="number" id="m32" value="0" disabled /></td>
-                        <td><input type="number" id="m33" value="1" disabled /></td>
-                    </tr>
-                </table>
-            </div>
-            <button id="transformation-button">Aplicar</button>
-            <canvas id="canvas"></canvas>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrizes de transformação</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="matrix-container">
+            <p class="matrix-title">Matriz de transformação</p>
+            <table>
+                <tr>
+                    <td><input type="text" inputmode="numeric" id="m11" value="1" /></td>
+                    <td><input type="text" inputmode="numeric" id="m12" value="0" /></td>
+                    <td><input type="text" inputmode="numeric" id="m13" value="0" /></td>
+                </tr>
+                <tr>
+                    <td><input type="text" inputmode="numeric" id="m21" value="0" /></td>
+                    <td><input type="text" inputmode="numeric" id="m22" value="1" /></td>
+                    <td><input type="text" inputmode="numeric" id="m23" value="0" /></td>
+                </tr>
+                <tr>
+                    <td><input type="text" inputmode="numeric" id="m31" value="0" disabled /></td>
+                    <td><input type="text" inputmode="numeric" id="m32" value="0" disabled /></td>
+                    <td><input type="text" inputmode="numeric" id="m33" value="1" disabled /></td>
+                </tr>
+            </table>
         </div>
-    </body>
+        <button id="transformation-button">Aplicar</button>
+        <canvas id="canvas"></canvas>
+    </div>
+</body>
+
 </html>
