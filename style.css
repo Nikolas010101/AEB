@@ -44,3 +44,33 @@ canvas {
     border: 1px solid black;
     background-color: var(--steel);
 }
+
+@media only screen and (max-width: 600px) {
+    canvas {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .matrix-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .matrix-container table {
+        margin-bottom: 1em;
+    }
+
+    .matrix-container td {
+        padding: 0.5em;
+    }
+
+    input[type="number"] {
+        width: 70px;
+        margin-bottom: 0.5em;
+    }
+
+    .matrix-title {
+        font-size: 1.2em;
+    }
+}
