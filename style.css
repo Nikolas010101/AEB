@@ -65,7 +65,7 @@ canvas {
         padding: 0.5em;
     }
 
-    input[type="number"] {
+    input[inputmode="numeric"] {
         width: 70px;
         margin-bottom: 0.5em;
     }
