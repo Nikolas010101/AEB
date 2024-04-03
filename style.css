@@ -14,6 +14,12 @@ body {
     gap: 1.5em;
 }
 
+.matrix-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .matrix-title,
 input {
     background-color: var(--steel);
@@ -49,12 +55,6 @@ canvas {
     canvas {
         width: 90vw;
         height: 90vw;
-    }
-
-    .matrix-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .matrix-container table {

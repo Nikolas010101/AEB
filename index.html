@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Matrizes de transformação</title>
+        <title>Matrizes de rotação</title>
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" defer></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -18,24 +18,17 @@
     <body>
         <div class="main">
             <div class="matrix-container">
-                <p class="matrix-title">Matrizes de transformação</p>
-                $${\Large\begin{bmatrix} \cos{\theta} & -\sin{\theta} & t_x \\ \sin{\theta} & \cos{\theta} &
-                t_y \\ 0 & 0 & 1 \end{bmatrix}}$$
+                <p class="matrix-title">Matrizes de rotação</p>
+                $${\Large\begin{bmatrix} \cos{\theta} & -\sin{\theta}\\ \sin{\theta} &
+                \cos{\theta}\end{bmatrix}}$$
                 <table>
                     <tr>
                         <td><input type="text" inputmode="numeric" id="m11" value="1" /></td>
                         <td><input type="text" inputmode="numeric" id="m12" value="0" /></td>
-                        <td><input type="text" inputmode="numeric" id="m13" value="0" /></td>
                     </tr>
                     <tr>
                         <td><input type="text" inputmode="numeric" id="m21" value="0" /></td>
                         <td><input type="text" inputmode="numeric" id="m22" value="1" /></td>
-                        <td><input type="text" inputmode="numeric" id="m23" value="0" /></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" inputmode="numeric" id="m31" value="0" disabled /></td>
-                        <td><input type="text" inputmode="numeric" id="m32" value="0" disabled /></td>
-                        <td><input type="text" inputmode="numeric" id="m33" value="1" disabled /></td>
                     </tr>
                 </table>
             </div>
